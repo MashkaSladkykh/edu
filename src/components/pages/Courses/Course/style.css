@@ -1,0 +1,34 @@
+.course * {
+    
+}
+
+.course {
+    box-shadow: 2px 1px 4px 1px rgba(0, 0, 0, 0.27);
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.course-img {
+    border-radius: 20px 20px 0 0;
+}
+
+.course-info {
+    padding: 10px;
+}
+.course-info-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.course-info-wrap span {
+    color:rgb(123, 123, 123);
+}
+
+.course-title, .course-teacher {
+    color:rgb(22 29 53);
+}
+
+@media (min-width:670px){
+    .course {
+        margin: 10px;
+    }
+}

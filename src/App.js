@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState, useEffect } from 'react';
 import './App.css';
+import { Edu } from './components/routes';
 
 function App() {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+      function handleResize() {
+      setWidth(window.innerWidth);
+      }
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+  }, [width]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Edu width={width}/>
     </div>
   );
 }

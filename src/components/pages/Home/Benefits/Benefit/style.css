@@ -1,0 +1,32 @@
+.benefit {
+    display: flex;
+}
+
+.benefit-img {
+    width: 40%;;
+}
+
+.benefit-general {
+    margin: 20px;
+    margin-top: 10%;
+}
+
+.benefit-title {
+    color: #6e7ac1;
+    text-shadow: 0px 1px black;
+}
+
+.benefit-text {
+    color: #7b7f96
+}
+
+@media (min-width:670px) {
+    .benefit{
+        flex-direction: column;
+        max-width: 30%;
+        align-items: center;
+    }
+    .benefit-img{
+        width: 200px;
+    }
+}

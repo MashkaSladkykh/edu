@@ -1,0 +1,38 @@
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    margin-top: 10px;
+    width: 250px;
+}
+
+.nav-list.open {
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-list.open li {
+    font-size: x-large;
+    padding: 10px;
+}
+
+@media (min-width:670px){
+    .nav-logo img {
+        width: 320px;
+    }
+
+    .nav-list{
+        margin-left: 10vw;
+    }
+    .nav-list a {
+        font-size: 20px;
+        padding-right: 2vw;
+    }
+
+    .nav-list a li:hover {
+        color: #a5a2a2cc;
+    }
+}
